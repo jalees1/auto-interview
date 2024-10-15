@@ -1,0 +1,102 @@
+[
+  {
+    "jobTitle": "Java Developer",
+    "description": "Looking for a proven software engineer with experience in Java-based development, including messaging applications using KAFKA. Exposure to building banking or financial services applications is an added advantage.",
+    "skills": ["Java", "Spring", "KAFKA", "RESTful APIs"],
+    "experience": "3 to 8 Years",
+    "location": "Mumbai",
+    "minimumScore": "70%",
+    "questions": [
+      "What are the main features of Java 8?",
+      "Explain the concept of Spring IoC container.",
+      "How does Kafka ensure fault-tolerance?",
+      "What are the key principles of RESTful API design?",
+      "Describe the difference between ArrayList and LinkedList.",
+      "What is the purpose of the @Autowired annotation in Spring?",
+      "How do you handle exceptions in Java?",
+      "Explain the concept of multithreading in Java.",
+      "What are the benefits of using KAFKA for messaging?",
+      "How do you ensure the security of a RESTful API?"
+    ]
+  },
+  {
+    "jobTitle": "Full-Stack Developer",
+    "description": "Looking for a full-stack developer with expertise in both front-end (React/Angular) and back-end technologies (Node.js, Express). Knowledge of RESTful API design, NoSQL databases, and cloud deployment is a must.",
+    "skills": ["React", "Node.js", "Express", "MongoDB", "RESTful APIs"],
+    "experience": "2 to 6 Years",
+    "location": "Bangalore",
+    "minimumScore": "65%",
+    "questions": [
+      "What is the virtual DOM and how does it work in React?",
+      "How do you implement middleware in Express?",
+      "What are the advantages of using MongoDB over SQL databases?",
+      "Explain the concept of component lifecycle methods in React.",
+      "How do you handle API versioning in a RESTful architecture?",
+      "What is the difference between state and props in React?",
+      "How do you optimize the performance of a Node.js application?",
+      "What is CORS and how do you enable it in Express?",
+      "Explain how to secure RESTful APIs using authentication and authorization.",
+      "How do you manage application state in React using Redux or Context API?"
+    ]
+  },
+  {
+    "jobTitle": "DevOps Engineer",
+    "description": "Looking for a skilled DevOps engineer with expertise in automating and streamlining deployment processes. Experience in CI/CD tools like Jenkins, containerization with Docker, and orchestration using Kubernetes is required.",
+    "skills": ["Jenkins", "Docker", "Kubernetes", "CI/CD", "AWS"],
+    "experience": "4 to 10 Years",
+    "location": "Pune",
+    "minimumScore": "70%",
+    "questions": [
+      "Explain the process of setting up a CI/CD pipeline using Jenkins.",
+      "What is the role of Docker in DevOps?",
+      "How does Kubernetes manage containerized applications?",
+      "What are the differences between monolithic and microservices architectures?",
+      "How do you monitor and log applications in production?",
+      "What is Infrastructure as Code (IaC) and how is it implemented?",
+      "Explain the process of deploying a Kubernetes cluster on AWS.",
+      "How do you manage secrets in a CI/CD pipeline?",
+      "What is the difference between continuous integration and continuous deployment?",
+      "How do you ensure high availability in a containerized environment?"
+    ]
+  },
+  {
+    "jobTitle": "Data Engineer",
+    "description": "We are looking for a data engineer with strong skills in building data pipelines and managing large datasets. Experience with ETL tools, data warehousing solutions, and working in a cloud environment is required.",
+    "skills": ["Python", "SQL", "ETL", "AWS", "Data Warehousing"],
+    "experience": "3 to 7 Years",
+    "location": "Hyderabad",
+    "minimumScore": "60%",
+    "questions": [
+      "What are the differences between a data lake and a data warehouse?",
+      "How do you optimize SQL queries for large datasets?",
+      "Explain the ETL process and the tools you have used.",
+      "How do you ensure data quality in your pipelines?",
+      "What is the purpose of partitioning in data processing?",
+      "How do you handle schema changes in a data warehouse?",
+      "Explain the concept of event-driven data pipelines.",
+      "How do you secure data at rest and in transit in cloud environments?",
+      "What are the key challenges of building real-time data pipelines?",
+      "How do you scale data pipelines to handle large amounts of data?"
+    ]
+  },
+  {
+    "jobTitle": "Android Developer",
+    "description": "Looking for an Android developer experienced in building high-performance mobile applications using Kotlin. Familiarity with Android SDK, REST APIs, and integrating third-party libraries is essential.",
+    "skills": ["Kotlin", "Android SDK", "REST APIs", "Gradle", "Git"],
+    "experience": "2 to 5 Years",
+    "location": "Delhi",
+    "minimumScore": "65%",
+    "questions": [
+      "What are the main advantages of using Kotlin over Java in Android development?",
+      "Explain the Android activity lifecycle.",
+      "How do you implement efficient data caching in Android?",
+      "What are the differences between `LiveData` and `ViewModel`?",
+      "How do you handle API calls in Android using Retrofit?",
+      "Explain the role of `Gradle` in Android project management.",
+      "What is the purpose of Android Jetpack libraries?",
+      "How do you manage memory and prevent leaks in Android apps?",
+      "What are the security best practices for Android app development?",
+      "How do you implement push notifications in an Android app?"
+    ]
+  }
+]
