@@ -4,12 +4,12 @@ import jobData from '../data/jobData.json';
 
 export default function JobDetails() {
   return (
-    <div className="container mx-auto p-6 bg-gray-100 rounded-lg shadow-lg mt-10"> {/* Container with padding and shadow */}
-      <h1 className="text-4xl font-bold mb-8 text-center text-blue-800 underline decoration-blue-300">Job Listings</h1> {/* Enhanced header styling */}
+    <div className="container mx-auto p-6 bg-gray-100 rounded-lg shadow-lg mt-10">
+      <h1 className="text-4xl font-bold mb-8 text-center text-blue-800 underline decoration-blue-300">Job Listings</h1> 
       
-      {/* Desktop Table */}
-      <div className="hidden md:block overflow-x-auto"> {/* Make table scrollable for small screens */}
-        <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm"> {/* Table styling */}
+      
+      <div className="hidden md:block overflow-x-auto"> 
+        <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm"> 
           <thead>
             <tr className="bg-blue-700 text-white text-left">
               <th className="border-b border-gray-300 px-4 py-3">Job Title</th>
@@ -39,7 +39,7 @@ export default function JobDetails() {
                 </tr>
                 <tr>
                   <td colSpan="7" className="border-b border-gray-200 px-4 py-3 bg-gray-50 text-gray-600 text-sm italic">
-                    {job.description} {/* Job description in italic to differentiate */}
+                    {job.description}
                   </td>
                 </tr>
               </React.Fragment>
@@ -48,8 +48,8 @@ export default function JobDetails() {
         </table>
       </div>
 
-      {/* Mobile Version */}
-      <div className="md:hidden"> {/* Show this section on mobile only */}
+      {/* mobile view */}
+      <div className="md:hidden">
         {jobData.map((job, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md p-4 mb-4 transition-transform transform hover:scale-105"> {/* Card layout for mobile */}
             <h2 className="text-lg font-semibold text-gray-800">{job.jobTitle}</h2>

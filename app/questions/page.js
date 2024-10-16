@@ -1,18 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // Import useRouter for navigation
+import { useRouter } from 'next/navigation'; 
 import jobData from '../data/jobData.json';
-import { useParams } from 'next/navigation'; // Use useParams to get route parameters
+import { useParams } from 'next/navigation'; 
 
 export default function QuestionPage() {
-  const { jobIndex } = useParams(); // Use useParams to get jobIndex from URL
-  const index = jobIndex ? parseInt(jobIndex) : 0; // Parse it as an integer 
-
-  // Get the job based on the index
+  const { jobIndex } = useParams(); 
+  const index = jobIndex ? parseInt(jobIndex) : 0; 
   const job = jobData[index];
 
-  // Check if the job exists
   if (!job) {
     return (
       <div className="container mx-auto p-4">
@@ -24,26 +21,20 @@ export default function QuestionPage() {
   const questions = job.questions || [];
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState(Array(questions.length).fill(''));
-  const [timeRemaining, setTimeRemaining] = useState(120); // Initialize with 120 seconds
+  const [timeRemaining, setTimeRemaining] = useState(120); 
+  const router = useRouter(); 
 
-  const router = useRouter(); // Initialize the router for navigation
-
-  // Use useEffect to set up the timer for each question
   useEffect(() => {
-    // Reset the timer whenever the question changes
     setTimeRemaining(120);
-
     const timer = setInterval(() => {
       setTimeRemaining((prevTime) => {
         if (prevTime <= 1) {
-          handleNext(); // Auto-move to next question when time runs out
-          return 120; // Reset timer for next question
+          handleNext(); 
+          return 120; 
         }
         return prevTime - 1;
       });
     }, 1000);
-
-    // Clear timer when component unmounts or question changes
     return () => clearInterval(timer);
   }, [currentQuestionIndex]);
 
@@ -51,7 +42,6 @@ export default function QuestionPage() {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // Navigate to the summary page when done
       router.push('/summary');
     }
   };
@@ -63,7 +53,6 @@ export default function QuestionPage() {
   };
 
   const handleSkip = () => {
-    // Move to the next question without answering
     handleNext();
   };
 
@@ -73,7 +62,6 @@ export default function QuestionPage() {
     setAnswers(newAnswers);
   };
 
-  // Check if there are any questions to display
   if (questions.length === 0) {
     return (
       <div className="container mx-auto p-4">
@@ -132,4 +120,3 @@ export default function QuestionPage() {
     </div>
   );
 }
-
